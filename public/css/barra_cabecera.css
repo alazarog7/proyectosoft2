@@ -1,0 +1,13 @@
+.imagen-cabecera{
+    background-image:url("https://hdwallsource.com/img/2014/6/green-27784-28506-hd-wallpapers.jpg");
+    height: 200px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.8;
+}
+.logo{
+    all:initial;
+    opacity: 1;
+}

@@ -1,0 +1,128 @@
+/* Estilos Plataforma Hydro */
+.hydro_class_titulo{
+font-family:'Century Gothic';
+font-size:25px;
+font-weight:bolder;
+color:#2d7e3e;
+}
+
+.hydro_class_subtitulo{
+font-family:'Century Gothic';
+font-size:20px;
+font-weight:600;
+color:#2d7e3e;
+}
+
+.hydro_class_contenido{
+font-family:'Century Gothic';
+font-size:14px;
+font-weight:lighter;
+color:#000000;
+}
+
+.hydro_class_comentarios{
+font-family:'Century Gothic';
+font-size:10px;
+font-weight:lighter;
+color:#000000;
+}
+
+.hydro_class_div_agrupar{
+border:solid 1px;
+border-radius: 10px;
+padding: 15px;
+border-color: #2d7e3e;
+margin:15px;
+}
+
+.hydro_form_button_verde{
+background-color: #2d7e3e;
+border:solid 1px #5cb85c;
+border-radius: 5px;
+padding: 10px 15px 10px 15px;
+font-family:'Century Gothic';
+font-weight:lighter;
+color:#ffffff;
+transition:all 0.3s;
+cursor: pointer;
+font-size: 14px;
+margin-top: 15px;
+margin-right: 15px;
+text-decoration: none;
+}
+
+.hydro_form_button_verde:hover{
+background-color: #5cb85c;
+}
+
+.hydro_form_button_verde_small{
+background-color: #2d7e3e;
+border:solid 1px #5cb85c;
+border-radius: 5px;
+padding: 10px 15px 10px 15px;
+font-family:'Century Gothic';
+font-weight:lighter;
+color:#ffffff;
+transition:all 0.3s;
+cursor: pointer;
+font-size: 12px;
+margin-top: 15px;
+margin-right: 15px;
+text-decoration: none;
+display:inline-block;
+}
+
+.hydro_form_button_verde_small:hover{
+background-color: #5cb85c;
+}
+
+.hydro_form_button_verde_small i{
+font-size:26px;
+margin-top:auto;
+}
+
+.hydro_class_div_multilinea{
+display:inline-block;
+}
+
+.hydro_form_button_blanco{
+background-color: #ffffff;
+border:solid 1px #2d7e3e;
+border-radius: 5px;
+padding: 10px 15px 10px 15px;
+font-family:'Century Gothic';
+font-weight:lighter;
+color:#2d7e3e;
+transition:all 0.3s;
+cursor: pointer;
+font-size: 14px;
+margin-top: 15px;
+margin-right: 15px;
+text-decoration: none;
+}
+
+.hydro_form_button_blanco:hover{
+background-color: #2d7e3e;
+color: #ffffff;
+border: none;
+}
+
+.hydro_form_label_negro{
+font-family:'Century Gothic';
+font-size:14px;
+font-weight:bolder;
+color:#000000;
+}
+
+.hydro_form_text{
+background-color: #ffffff;
+border:solid 1px #cccccc;
+border-radius: 5px;
+padding: 10px;
+font-family:'Century Gothic';
+font-weight:lighter;
+color:#000000;
+font-size: 14px;
+margin-top: 15px;
+margin-right: 15px;
+}
