@@ -15,6 +15,7 @@ class UserRutasTest extends TestCase
      */
     public function testExample()
     {
-        $this->assertTrue(true);
+        $reponse = $this->get('/');
+        $reponse->assertStatus(200);
     }
 }
