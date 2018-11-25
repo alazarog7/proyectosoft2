@@ -25,7 +25,7 @@
                     Bienvenido al sistema:
                     <br/><br/>
                     <div class="hydro_div_line_short">
-                        <span class="hydro_nombre_sistema">cuentas</span>
+                        <span class="hydro_nombre_sistema"> gestion de cuentas</span>
                         <br/>
                         <span class="hydro_nombre_sistema_sub">privilegiadas</span>
                     </div>

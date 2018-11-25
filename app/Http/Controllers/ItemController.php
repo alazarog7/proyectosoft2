@@ -98,14 +98,11 @@ class ItemController extends Controller
      */
     public function show($id)
     {
-        //return "hola";
-        //dd("hola");
         $item = Item::where('APP_ID_HISTORICO',null)
                     ->where('ID_ITEM',$id)->first();
         $encrypt = new RSACrypt();
         $item->PASSWORD_D = $encrypt->desencriptado(base64_decode($item->PASSWORD));
         return response()->json(['item'=>$item]);
-
     }
 
     /**

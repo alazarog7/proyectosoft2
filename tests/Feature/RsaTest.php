@@ -1,12 +1,13 @@
 <?php
 
-namespace Tests\Unit;
+namespace Tests\Feature;
 
 use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\Library\RSACrypt;
 
-class ExampleTest extends TestCase
+class RsaTest extends TestCase
 {
     /**
      * A basic test example.
@@ -16,7 +17,7 @@ class ExampleTest extends TestCase
     public function testBasicTest()
     {
         $encrypt = new RSACrypt();
-        $temp = $encrypt->encriptado("hola");
-        $this->assertEquals("hola",$encrypt->desencriptado($temp));
+        $temp = $encrypt->encriptado("usuario");
+        $this->assertEquals("usuario",$encrypt->desencriptado($temp));
     }
 }
