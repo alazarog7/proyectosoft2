@@ -4,6 +4,7 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Library\RSACrypt;
 
 class ExampleTest extends TestCase
 {
@@ -14,6 +15,8 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $this->assertTrue(true);
+        $encrypt = new RSACrypt();
+        $temp = $encrypt->encriptado("hola");
+        $this->assertEquals("hola",$encrypt->desencriptado($temp));
     }
 }

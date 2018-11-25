@@ -72,6 +72,7 @@ $(document).ready(function () {
         var value = this['href'];
         //console.log(value);
         $.get( value, function( data ) {
+            console.log(data);
             $('#nombre-item').text(data["item"]["NOMBRE"]);
             $('#cod_act').attr('value',data["item"]["CODIGO_ACTIVO"]);
             $('#cod_saf').attr('value',data["item"]["CODIGO_SAF"]);
