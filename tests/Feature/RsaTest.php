@@ -10,11 +10,9 @@ use App\Library\RSACrypt;
 class RsaTest extends TestCase
 {
     /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function testBasicTest()
+     * @test
+     * */
+    public function prueba()
     {
         $encrypt = new RSACrypt();
         $temp = $encrypt->encriptado("usuario");

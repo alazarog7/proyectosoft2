@@ -27,11 +27,11 @@ class Familia extends TestCase
         $this->be($user);
        	$response = $this->from('/familia')->post('/familia',
        	 	[
-       	 	'NOMBRE'=>Null,
+       	 	'NOMBRE'=>null,
        	 	]);
        	$response->assertRedirect('/familia')
-                    ->assertSessionHasErrors([
+                  ->assertSessionHasErrors([
                         'NOMBRE' => 'Debe ingresar un nombre mayor a 5 caracteres',
-                    ]);
+                  ]);
     }
 }
