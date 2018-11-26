@@ -27,7 +27,7 @@ class FamiliaTest extends TestCase
         $this->be($user);
        	$response = $this->from('/familia')->post('/familia',
        	 	[
-       	 	'NOMBRE'=>Null,
+       	 	'NOMBRE'=>NULL,
        	 	]);
        	$response->assertRedirect('/familia')
                     ->assertSessionHasErrors([

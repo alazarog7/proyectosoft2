@@ -23,7 +23,7 @@ class UserRutasTest extends TestCase
 /**
      * @test
      */
-    public function registrar_usuario()
+    public function registrar_usuario_test()
     {
         $user = new User([
             'NOMBRE'=>'JUAN',
@@ -39,7 +39,7 @@ class UserRutasTest extends TestCase
         $this->session(['ROL'=>6]);
         $this->get('/usuario/create')
                 ->assertSee('Registro de Usuario');
-        $response = $this->from('/usuario/create')->post('/usuario/store', [
+        $response = $this->from('/usuario/store')->post('/usuario', [
             'NOMBRE'=>'Ana',
             'APELLIDO'=>'Tineo Torrico',
             'USUARIO_ALIAS'=>'ana',
@@ -47,17 +47,17 @@ class UserRutasTest extends TestCase
             'EMAIL'=>'ana@anh.gob.bo',
             'PASSWORD'=>bcrypt('123'),
         ]);
-         /*
-        $response->assertRedirect('/usuario');
-       $this->assertCredentials([
+        
+        $response->assertRedirect('/usuario/store');
+       /*$this->assertCredentials([
             'NOMBRE'=>'Ana',
             'APELLIDO'=>'Tineo Torrico',
             'USUARIO_ALIAS'=>'ana',
             'TELEFONO'=>'7984512',
             'EMAIL'=>'ana@anh.gob.bo',
             'PASSWORD'=>bcrypt('123'),
-            ]);
-*/
+            ]);*/
+
     }
 
 }
