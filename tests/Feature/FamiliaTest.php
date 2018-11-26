@@ -25,14 +25,9 @@ class FamiliaTest extends TestCase
             'AUD_FECHA'=>Carbon::now(),
         ]);
         $this->be($user);
-       	$response = $this->from('/familia')->post('/familia',
-       	 	[
-<<<<<<< HEAD
+       	$response = $this->from('/familia')->post('/familia',[
        	 	'NOMBRE'=>NULL,
-=======
-       	 	'NOMBRE'=>null,
->>>>>>> f451a1d98f711f67e0759fe8adf8618f2b126d49
-       	 	]);
+            ]);
        	$response->assertRedirect('/familia')
                   ->assertSessionHasErrors([
                         'NOMBRE' => 'Debe ingresar un nombre mayor a 5 caracteres',
