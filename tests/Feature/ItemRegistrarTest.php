@@ -44,7 +44,7 @@ class ItemRegistrarTest extends TestCase
  
           ]);
          $this->be($user);
-        $response = $this->get('/item');
-        $response->assertStatus(200);
+         $response = $this->get('/item');
+         $response->assertStatus(200);
     }
 }
