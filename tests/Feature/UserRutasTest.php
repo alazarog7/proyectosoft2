@@ -49,15 +49,6 @@ class UserRutasTest extends TestCase
         ]);
         
         $response->assertRedirect('/usuario/store');
-       /*$this->assertCredentials([
-            'NOMBRE'=>'Ana',
-            'APELLIDO'=>'Tineo Torrico',
-            'USUARIO_ALIAS'=>'ana',
-            'TELEFONO'=>'7984512',
-            'EMAIL'=>'ana@anh.gob.bo',
-            'PASSWORD'=>bcrypt('123'),
-            ]);*/
-
     }
 
 }
