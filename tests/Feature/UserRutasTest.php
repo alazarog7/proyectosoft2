@@ -46,7 +46,6 @@ class UserRutasTest extends TestCase
             'TELEFONO'=>'7984512',
             'EMAIL'=>'ana@anh.gob.bo',
             'PASSWORD'=>bcrypt('123'),
-
         ]);
          /*
         $response->assertRedirect('/usuario');
