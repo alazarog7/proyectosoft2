@@ -20,7 +20,7 @@ class UserRutasTest extends TestCase
         $reponse = $this->get('/');
         $reponse->assertStatus(200);
     }
-/**
+     /**
      * @test
      */
     public function registrar_usuario_test()

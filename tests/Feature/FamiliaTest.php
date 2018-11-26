@@ -26,13 +26,7 @@ class FamiliaTest extends TestCase
         ]);
         $this->be($user);
        	$response = $this->from('/familia')->post('/familia',
-       	 	[
-<<<<<<< HEAD
-       	 	'NOMBRE'=>NULL,
-=======
-       	 	'NOMBRE'=>null,
->>>>>>> f451a1d98f711f67e0759fe8adf8618f2b126d49
-       	 	]);
+       	 	['NOMBRE'=>NULL,]);
        	$response->assertRedirect('/familia')
                   ->assertSessionHasErrors([
                         'NOMBRE' => 'Debe ingresar un nombre mayor a 5 caracteres',
