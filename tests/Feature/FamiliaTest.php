@@ -7,12 +7,12 @@ use Illuminate\Support\Facades\Auth;
 use Tests\TestCase;
 use App\User;
 use Carbon\Carbon;
-class Familia extends TestCase
+class FamiliaTest extends TestCase
 {
      /**
      * @test
      */
-    public function Nombre_familia_requerido()
+    public function Nombre_familia_requerido_test()
     {
     	$user = new User([
             'NOMBRE'=>'JUAN',
