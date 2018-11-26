@@ -25,26 +25,6 @@ class UserRutasTest extends TestCase
      */
     public function registrar_usuario()
     {
- /*
-        $response = $this->from('/usuario/create')->post('/usuario/create', [
-            'AUD_ESTADO'=>1,
-            'AUD_FECHA'=>Carbon::now(),
-
-            'FK_PARA_IP_ROL_RI'=>$request->ROL,
-            'FK_USUA_ID_USUA_UI'=>$usuario->ID_USUA,
-            'AUD_ESTADO'=>1,
-            'AUD_FECHA'=>Carbon::now(),
-        ]);
-
-            $this->assertCredentials([
-            'AUD_ESTADO'=>1,
-            'AUD_FECHA'=>Carbon::now(),
-            'FK_PARA_IP_ROL_RI'=>$request->ROL,
-            'FK_USUA_ID_USUA_UI'=>$usuario->ID_USUA,
-            'AUD_ESTADO'=>1,
-            'AUD_FECHA'=>Carbon::now(),
-
-        ]);*/
         $user = new User([
             'NOMBRE'=>'JUAN',
             'APELLIDO'=>'LOPEZ ARANA',
