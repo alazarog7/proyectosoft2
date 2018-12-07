@@ -9,7 +9,9 @@ use App\Rol;
 use App\User;
 use App\Usit;
 use Carbon\Carbon;
+use Illuminate\Contracts\Pagination\Paginator;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
@@ -54,6 +56,8 @@ class UsuarioController extends Controller
                                          \"CATEGORIA\"=3  
                         ");
 
+
+        $usuario = Paginator::make($usuario,count($usuario),2);
         return view('usuario.index',['usuario'=>$usuario,'rol'=>$combo_rol]);
     }
 
